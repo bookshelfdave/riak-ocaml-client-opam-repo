@@ -8,4 +8,4 @@ build: [
     remove: [
       ["ocamlfind" "remove" "riak"]
       ]
-      depends: ["ocamlfind","oUnit"]
+      depends: ["ocamlfind","ounit","piqi"]
