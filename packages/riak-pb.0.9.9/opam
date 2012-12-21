@@ -1,0 +1,9 @@
+opam-version: "1"
+maintainer: "diparfitt@gmail.com"
+build: [
+         ["make" "ocaml_release"]
+       ]
+remove: [
+         ["ocamlfind" "remove" "riak-pb"]
+        ]
+depends: ["ocamlfind" "piqi"]
