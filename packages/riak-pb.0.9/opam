@@ -1,7 +1,9 @@
 opam-version: "1"
 maintainer: "diparfitt@gmail.com"
 build: [
-         ["make" "ocaml_release"]
+         ["./configure"]
+         ["make"]
+         ["make" "install"]
        ]
 remove: [
          ["ocamlfind" "remove" "riak-pb"]
