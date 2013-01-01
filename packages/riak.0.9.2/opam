@@ -1,0 +1,11 @@
+opam-version: "1"
+maintainer: "diparfitt@gmail.com"
+build: [
+         ["./configure"]
+         ["make"]
+         ["make" "install"]
+       ]
+remove: [
+         ["ocamlfind" "remove" "riak-ocaml-client"]
+        ]
+depends: ["ocamlfind" "ounit" "piqi" "riak-pb" "lwt"]
